@@ -7,7 +7,7 @@ console.log("welcome "+ userAnswer,"I hope you know Yogesh Lets play some quiz b
 console.log("-----")
 var userAnswer1=readlineSync.question("Do you know Yogesh Tiwari ? please say →→→ yes or no ");
 console.log("-----")
-if (userAnswer1==="yes"){
+if (userAnswer1.toUpperCase().toLowerCase()==="yes"){
 console.log( "you entered "+userAnswer1,"you are right");
 score=score+1
 
@@ -25,7 +25,7 @@ console.log("------")
 function play(question,answer) {
 var userAnswer2=readlineSync.question(question);
 
-if (userAnswer2===answer) {
+if (userAnswer2.toUpperCase().toLowerCase()===answer) {
 console.log("You are Right")
 score=score+1
 
